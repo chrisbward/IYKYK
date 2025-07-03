@@ -10,8 +10,8 @@ func TestCollapseWhitespace(t *testing.T) {
 		// Basic cases
 		{"Hello   World", "Hello World"},
 		{"  Leading and trailing   ", "Leading and trailing"},
-		{"Multiple\tspaces\nand\nnewlines", "Multiple spaces and newlines"},
-		{"Tab\tand space", "Tab and space"},
+		{"Multiple\tspaces\nand\nnewlines", "Multiple\tspaces\nand\nnewlines"},
+		{"Tab\tand space", "Tab\tand space"},
 
 		// Punctuation spacing
 		{"Hello , world !", "Hello, world!"},
@@ -26,7 +26,7 @@ func TestCollapseWhitespace(t *testing.T) {
 		{"NoChange", "NoChange"},
 
 		// Mixed content
-		{"  Hello \t world  ! How are you  ? ", "Hello world! How are you?"},
+		{"  Hello \t world  ! How are you  ? ", "Hello \t world! How are you?"},
 
 		// Multiple punctuation
 		{"Hello  ,  world  !  ", "Hello, world!"},

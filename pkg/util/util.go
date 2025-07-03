@@ -11,7 +11,7 @@ func CollpaseWhitespace(s string) string {
 	s = strings.ReplaceAll(s, "\u00A0", " ")
 
 	// Collapse all kinds of whitespace into a single space
-	re := regexp.MustCompile(`\s+`)
+	re := regexp.MustCompile(` +`)
 	s = re.ReplaceAllString(s, " ")
 
 	// remove spaces before punctuation

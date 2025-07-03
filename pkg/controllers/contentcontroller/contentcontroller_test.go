@@ -47,7 +47,7 @@ func TestCleanContentAutomatic(t *testing.T) {
 				StripAngledQuotes: true,
 			},
 			useMockStripper: false,
-			input:           "Here is some content - I wish to be “cleaned”. It’s very useful 🚀 for certain purposes ",
+			input:           "Here is some content — I wish to be “cleaned”. It’s very useful 🚀 for certain purposes ",
 			mockSetup: func() {
 				// nothing here as we use real stripper for demo
 			},
