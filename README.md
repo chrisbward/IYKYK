@@ -24,7 +24,7 @@ func stripAction() {
         StripAngledQuotes: true,
     }, stripContentController) 
 
-    input := `Here is some content - I wish to be “cleaned”. It’s very useful 🚀 for certain purposes `
+    input := `Here is some content — I wish to be “cleaned”. It’s very useful 🚀 for certain purposes `
 
     output, err := contentController.CleanContentAutomatic(input)
     fmt.Println(output)
