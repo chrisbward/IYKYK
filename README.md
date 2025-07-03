@@ -42,5 +42,5 @@ Here is some content - I wish to be "cleaned". It's very useful for certain purp
 
 To run the unit tests;
 ```bash
-make test-go
+make test
 ```
